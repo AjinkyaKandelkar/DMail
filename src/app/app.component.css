@@ -1,0 +1,45 @@
+
+
+app-header
+{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 4rem ;
+    z-index: 2;
+}
+
+main{
+    position: absolute;
+    width: 100%;
+    top: 3rem;
+    z-index: 1;
+}
+app-sidebar{
+    position: fixed;
+    left: 0rem;
+    width: 50px;
+    transition: width 250ms ease-in-out;
+    height: calc(100vh - 3rem);
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+.main-card
+{
+    position: absolute;
+    left: 50px;
+    width:calc(100% - 50px) ;
+    transition: width 250ms ease-in-out;
+}
+.app-side-nav-open
+{
+    width: 250px;
+    
+}
+.display-area-shrink
+{
+    width:calc(100% - 250px) ;
+    left: 250px;
+    transition: width 250ms ease-in-out, left 250ms ease-in-out;
+    
+}

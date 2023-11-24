@@ -1,0 +1,11 @@
+<div class="container-fluid g-0">
+  <app-header (childevent)=" sidenavstatus= $event;" ></app-header>
+  <main>
+
+    <app-sidebar class=" bg-dark text-light" [sideNavStatus]="sidenavstatus" [ngClass]="{'app-side-nav-open':sidenavstatus}" ></app-sidebar> 
+   <div class="card main-card" [ngClass]="{'display-area-shrink':sidenavstatus}">
+      <router-outlet></router-outlet>
+   </div> 
+ 
+  </main>
+</div>
